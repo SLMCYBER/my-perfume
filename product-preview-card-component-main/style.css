@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.img-div img{
+    width: 250px;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.text-div{
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.first-p{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.money{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.money h1{
+    color: hsl(158, 36%, 37%);
+}
+.only-btn{
+    width: 200px;
+    height: 45px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    cursor: pointer;
+}
+.only-btn:hover{
+    background-color: hsl(158, 79%, 54%);
+    transition: 1s ease-in;
+}
+@media screen and (max-width: 888px) {
+    .parent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-div img{
+        width: 350px;
+        height: 250px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+    .text-div{
+        width: 350px;
+        height: 350px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+    .only-btn{
+        width: 300px;
+    }
+}
+
